@@ -132,22 +132,46 @@ var itemList = document.querySelector('#items');
 // // console.log(e.shiftKey);
 // // console.log(e.ctrlKey);
 // };
-let button = document.getElementById('button');
-let box = document.getElementById('box');    //Show box
-// box.addEventListener('mouseenter', runEvent);//Cool staff
-// box.addEventListener('mouseleave', runEvent);//hide staff can be
-// box.addEventListener('mouseover', runEvent);//the element
-// box.addEventListener('mouseout', runEvent);
-// button.addEventListener('click', runEvent);
-// button.addEventListener('dblclick', runEvent);
-// button.addEventListener('mousedown', runEvent);
-// box.addEventListener('mousemove', runEvent);
-let itemInput = document.querySelector('input[type="text"]');
-let form = document.querySelector('form');
+var button = document.getElementById('button');
+var box = document.getElementById('box');
 
-itemInput.addEventListener('keydown', runEvent);
+//button.addEventListener('click', runEvent);
+//button.addEventListener('dblclick', runEvent);
+//button.addEventListener('mousedown', runEvent);
+//button.addEventListener('mouseup', runEvent);
+
+//box.addEventListener('mouseenter', runEvent);
+//box.addEventListener('mouseleave', runEvent);
+
+//box.addEventListener('mouseover', runEvent);
+//box.addEventListener('mouseout', runEvent);
+
+// box.addEventListener('mousemove', runEvent);
+
+var itemInput = document.querySelector('input[type="text"]');
+var form = document.querySelector('form');
+var select = document.querySelector('select');
+
+// itemInput.addEventListener('keydown', runEvent);
+// itemInput.addEventListener('keyup', runEvent);
+// itemInput.addEventListener('keypress', runEvent);
+
+// itemInput.addEventListener('focus', runEvent);
+// itemInput.addEventListener('blur', runEvent);
+
+// itemInput.addEventListener('cut', runEvent);
+// itemInput.addEventListener('paste', runEvent);
+
+// itemInput.addEventListener('input', runEvent);
+
+// select.addEventListener('change', runEvent);
+// select.addEventListener('input', runEvent);
+
+form.addEventListener('submit', runEvent);
+
 
 function runEvent(e){
+	e.preventDefault();
 	console.log('EVENT TYPE: '+e.type);
 // console.log(e.target.value);
 // document.getElementById('output').innerHTML = e.target.value;
