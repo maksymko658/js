@@ -58,12 +58,18 @@ var itemList = document.querySelector('#items');
 
 //ChildNodes
 //console.log(itemList.childNodes);
-console.log(itemList.children);
-console.log(itemList.children[1]);
-itemList.children[1].style.backgroundColor = 'yellow';
+// console.log(itemList.children);
+// console.log(itemList.children[1]);
+// itemList.children[1].style.backgroundColor = 'yellow';
 
-//FirstChild
-console.log(itemList.firstChild); //delete spacing
-//firstElementChild
-console.log(itemList.firstElementChild);
-itemList.firstElementChild.textContent = 'Hello';
+// //FirstChild
+// console.log(itemList.firstChild); //delete spacing
+// //firstElementChild
+// console.log(itemList.firstElementChild);
+// itemList.firstElementChild.textContent = 'Hello';
+
+//lastChild
+// console.log(itemList.lastChild); //delete spacing
+// //lastElementChild
+// console.log(itemList.lastElementChild);
+// itemList.lastElementChild.textContent = 'Hello';
