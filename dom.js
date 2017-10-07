@@ -42,7 +42,7 @@ console.log(c);*/
 // for(let i = 0; i < items.length; i++){
 // 	items[i].style.backgroundColor = 'f4f4f4';
 // }
-
+//===========================================================COURSE 2================================================================
 //Travesing the DOM //
 var itemList = document.querySelector('#items');
 //parentNode
@@ -89,22 +89,34 @@ var itemList = document.querySelector('#items');
 // createElement
 
 // create a div
-let newDiv = document.createElement('div'); 
-//new Class
-newDiv.className = 'hello';
-//new ID
-newDiv.id = 'hello1';
-// new title
-newDiv.setAttribute('title', 'hello Div');
-//create text node
-let newDivText = document.createTextNode('hello');
-//Add text to the div
- newDiv.appendChild(newDivText);
+// let newDiv = document.createElement('div'); 
+// //new Class
+// newDiv.className = 'hello';
+// //new ID
+// newDiv.id = 'hello1';
+// // new title
+// newDiv.setAttribute('title', 'hello Div');
+// //create text node
+// let newDivText = document.createTextNode('hello');
+// //Add text to the div
+//  newDiv.appendChild(newDivText);
 
-//insure in DOM
-let container = document.querySelector('header .container');
-let h1 = document.querySelector('header h1');
-container.insertBefore(newDiv, h1);
-newDiv.style.fontSize = '30px';
+// //insure in DOM
+// let container = document.querySelector('header .container');
+// let h1 = document.querySelector('header h1');
+// container.insertBefore(newDiv, h1);
+// newDiv.style.fontSize = '30px';
 
-console.log(newDiv);
+// console.log(newDiv);
+
+//===========================================================COURSE 3================================================================
+
+
+
+
+
+
+
+
+
+//===========================================================COURSE 4================================================================
