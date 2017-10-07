@@ -73,3 +73,15 @@ var itemList = document.querySelector('#items');
 // //lastElementChild
 // console.log(itemList.lastElementChild);
 // itemList.lastElementChild.textContent = 'Hello';
+
+
+// nextSibling// старший брат
+// console.log(itemList.nextSibling);
+// // next ElementSibling
+// console.log(itemList.nextElementSibling);
+
+// //previousSibling
+// console.log(itemList.previousSibling);
+// //prebiousElementSibling
+// console.log(itemList.previousElementSibling);
+// itemList.previousElementSibling.style.backgroundColor = 'green';
