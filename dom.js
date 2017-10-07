@@ -141,12 +141,18 @@ let box = document.getElementById('box');    //Show box
 // button.addEventListener('click', runEvent);
 // button.addEventListener('dblclick', runEvent);
 // button.addEventListener('mousedown', runEvent);
-box.addEventListener('mousemove', runEvent);
+// box.addEventListener('mousemove', runEvent);
+let itemInput = document.querySelector('input[type="text"]');
+let form = document.querySelector('form');
+
+itemInput.addEventListener('keydown', runEvent);
 
 function runEvent(e){
 	console.log('EVENT TYPE: '+e.type);
-
-	output.innerHTML = '<h3>MouseX: '+e.offsetX+' </h3><h3>MouseY: '+e.offsetY+'</h3>';
+// console.log(e.target.value);
+// document.getElementById('output').innerHTML = e.target.value;
+	// output.innerHTML = '<h3>MouseX: '+e.offsetX+' </h3><h3>MouseY: '+e.offsetY+'</h3>';
+	// document.body.style.backgroundColor = "rgb("+e.offsetX+","+e.offsetY+",40)"//CHANGING COLORS in box and body
 }
 
 //===========================================================COURSE 4================================================================
