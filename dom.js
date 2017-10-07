@@ -115,17 +115,23 @@ function buttonClick(e){
 	// console.log('button clicked');
 	// document.getElementById('header-title').textContent = 'Changed';
 	// document.querySelector('#main').style.backgroundColor = '#f4f4f4';
-console.log(e.target);
-console.log(e.target.id);
-console.log(e.target.className);
-console.log(e.target.classList);
-let output = document.getElementById('output');
-output.innerText = '<h3>'+e.target.id+'</h3>';
+// console.log(e.target);
+// console.log(e.target.id);
+// console.log(e.target.className);
+// console.log(e.target.classList);
+// let output = document.getElementById('output');
+// output.innerText = '<h3>'+e.target.id+'</h3>';
+// };
+
+// console.log(e.type);
+// console.log(e.clientX);//from all page
+// console.log(e.clientY);
+// console.log(e.offsetX);// from button
+// console.log(e.offsetY);
+console.log(e.altKey);
+console.log(e.shiftKey);
+console.log(e.ctrlKey);
 };
-
-
-
-
 
 
 //===========================================================COURSE 4================================================================
