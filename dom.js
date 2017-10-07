@@ -133,14 +133,20 @@ var itemList = document.querySelector('#items');
 // // console.log(e.ctrlKey);
 // };
 let button = document.getElementById('button');
-
+let box = document.getElementById('box');    //Show box
+// box.addEventListener('mouseenter', runEvent);//Cool staff
+// box.addEventListener('mouseleave', runEvent);//hide staff can be
+// box.addEventListener('mouseover', runEvent);//the element
+// box.addEventListener('mouseout', runEvent);
 // button.addEventListener('click', runEvent);
 // button.addEventListener('dblclick', runEvent);
 // button.addEventListener('mousedown', runEvent);
-button.addEventListener('mouseup', runEvent);
+box.addEventListener('mousemove', runEvent);
 
 function runEvent(e){
 	console.log('EVENT TYPE: '+e.type);
+
+	output.innerHTML = '<h3>MouseX: '+e.offsetX+' </h3><h3>MouseY: '+e.offsetY+'</h3>';
 }
 
 //===========================================================COURSE 4================================================================
