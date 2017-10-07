@@ -57,3 +57,13 @@ var itemList = document.querySelector('#items');
 
 
 //ChildNodes
+//console.log(itemList.childNodes);
+console.log(itemList.children);
+console.log(itemList.children[1]);
+itemList.children[1].style.backgroundColor = 'yellow';
+
+//FirstChild
+console.log(itemList.firstChild); //delete spacing
+//firstElementChild
+console.log(itemList.firstElementChild);
+itemList.firstElementChild.textContent = 'Hello';
