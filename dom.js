@@ -31,14 +31,29 @@ console.log(c);*/
 
 // GetElementByClass //
 
-let items = document.GetElementByClassName('list-group-item');
-console.log(items[1]);
-items[1].textContent = 'Hello 2';
-items[1].style.fontWeight = 'bold';
-items[1].style.backgroundColor = 'yellow';
-// Gives err
-// items.style.backgroundColor = 'f4f4f4';
+// let items = document.GetElementByClassName('list-group-item');
+// console.log(items[1]);
+// items[1].textContent = 'Hello 2';
+// items[1].style.fontWeight = 'bold';
+// items[1].style.backgroundColor = 'yellow';
+// // Gives err
+// // items.style.backgroundColor = 'f4f4f4';
 
-for(let i = 0; i < items.length; i++){
-	items[i].style.backgroundColor = 'f4f4f4';
-}
+// for(let i = 0; i < items.length; i++){
+// 	items[i].style.backgroundColor = 'f4f4f4';
+// }
+
+//Travesing the DOM //
+var itemList = document.querySelector('#items');
+//parentNode
+// console.log(itemList.parentNode);
+// itemList.parentNode.style.backgroundColor = '#f4f4f4';
+// console.log(itemList.parentNode.parentNode); //container class
+
+/*parentElement*/
+// console.log(itemList.parentElement);
+// itemList.parentElement.style.backgroundColor = '#f4f4f4';
+// console.log(itemList.parentElement.parentElement); //container class
+
+
+//ChildNodes
