@@ -110,28 +110,37 @@ var itemList = document.querySelector('#items');
 // console.log(newDiv);
 
 //===========================================================COURSE 3================================================================
-let button = document.getElementById('button').addEventListener('click', buttonClick);
-function buttonClick(e){
-	// console.log('button clicked');
-	// document.getElementById('header-title').textContent = 'Changed';
-	// document.querySelector('#main').style.backgroundColor = '#f4f4f4';
-// console.log(e.target);
-// console.log(e.target.id);
-// console.log(e.target.className);
-// console.log(e.target.classList);
-// let output = document.getElementById('output');
-// output.innerText = '<h3>'+e.target.id+'</h3>';
+// let button = document.getElementById('button').addEventListener('click', buttonClick);
+// function buttonClick(e){
+// 	// console.log('button clicked');
+// 	// document.getElementById('header-title').textContent = 'Changed';
+// 	// document.querySelector('#main').style.backgroundColor = '#f4f4f4';
+// // console.log(e.target);
+// // console.log(e.target.id);
+// // console.log(e.target.className);
+// // console.log(e.target.classList);
+// // let output = document.getElementById('output');
+// // output.innerText = '<h3>'+e.target.id+'</h3>';
+// // };
+
+// // console.log(e.type);
+// // console.log(e.clientX);//from all page
+// // console.log(e.clientY);
+// // console.log(e.offsetX);// from button
+// // console.log(e.offsetY);
+// // console.log(e.altKey);
+// // console.log(e.shiftKey);
+// // console.log(e.ctrlKey);
 // };
+let button = document.getElementById('button');
 
-// console.log(e.type);
-// console.log(e.clientX);//from all page
-// console.log(e.clientY);
-// console.log(e.offsetX);// from button
-// console.log(e.offsetY);
-console.log(e.altKey);
-console.log(e.shiftKey);
-console.log(e.ctrlKey);
-};
+// button.addEventListener('click', runEvent);
+// button.addEventListener('dblclick', runEvent);
+// button.addEventListener('mousedown', runEvent);
+button.addEventListener('mouseup', runEvent);
 
+function runEvent(e){
+	console.log('EVENT TYPE: '+e.type);
+}
 
 //===========================================================COURSE 4================================================================
